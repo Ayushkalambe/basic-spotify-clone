@@ -1,0 +1,266 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+.sidebar{
+    background-color:#000;
+    width: 340px;
+    border-radius: 1rem;
+}
+.main_content{
+    background-color:#121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: scroll;
+    padding: 0 1.5rem 0 1.5rem;
+}
+.music_player{
+    background-color:#000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+}
+.nav{
+    background-color: #121212;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    
+}
+.nav_option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+.nav_option:hover{
+    opacity: 1;
+}
+.nav_option a{
+    text-decoration: none;      
+    color: white;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+.nav_option i{
+    font-size: 1.25rem;
+}
+
+.library{
+    height: 100%;
+    background-color: #121212;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.nav_option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.lib_btn{
+    font-size: 1.25rem;
+    display: flex;
+}
+.lib_btn i{
+    opacity: 0.7;
+    margin-right: 0.5rem;
+}
+.lib_btn i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+}
+.p1{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+button{
+    background-color: white;
+    border: none;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    border-radius: 100px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    
+}
+.stickynav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 100;
+    
+}
+.icons img{
+    height: 2rem;
+    width: 2rem;
+}
+.icons{
+    padding-left: 1rem;
+}
+.blackbtn{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.navbtn{
+    padding-right: 1rem;
+}
+.navbtn button{
+    margin-right: 0.5rem;
+}
+.navbtn i{
+    font-size: 1rem;
+}
+.card-container{
+    display: flex;
+    
+}
+.card{
+    width: 200px;
+    background-color: #1e1d1d;
+    border-radius: 0.5rem;
+    padding: 1rem;
+   
+    margin-right: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+.card:hover{
+    background-color:#232323;
+}
+.cardimg{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.cardtitle{
+    font-weight: 600;
+}
+.cardinfo{
+    opacity: 0.5;
+}
+
+.footerline{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+.line{
+    width: 100%;
+    height: 100px;
+    opacity: 0.5;
+    border-top: 1px solid white;
+}
+
+button{
+    opacity: 0.8;
+    cursor: pointer;
+}
+button:hover{
+    opacity:1;
+}
+.music_player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.album{
+    width: 25%;
+    background-color: white;
+}
+.controls{
+    width: 25%;
+    background-color: green;
+}
+.player{
+    width: 50%;
+    
+    
+}
+.player_controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.controlbtn:hover{
+    opacity: 1;
+
+}
+.controlbtn{
+    height: 1.2rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.controlplay{
+    height: 2rem;
+    opacity: 1;
+    transition: transform 0.1s ease;
+}
+.controlplay:hover{
+    transform: scale(1.1);
+}
+.playercontrol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shifter{
+    width: 70%;
+    appearance: none;
+}
+.shifter::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: 0.4rem;
+    border-radius: 100px;
+}
+.shifter::-webkit-slider-thumb{
+    appearance: none;
+    background-color:#1bd760;
+    margin-top:-5px;
+    height:1rem;
+    width:1rem;
+    border-radius: 50%;
+}
